@@ -10,11 +10,11 @@
 <body>
 <div class="container">
    <div class="subcontainer">
-   <h1>Login failed</h1>
-   <form action="index.jsp">
-   <input type="submit" value="go to home page">
-   </form>
+ 	<h1>Welcome to Scalar Coder</h1>
+    <form action="index.jsp">
+    <input type="submit" value="go to log in">
+    </form>
    </div>
-</div>
+</div>   
 </body>
 </html>

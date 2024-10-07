@@ -10,11 +10,12 @@
 <body>
 <div class="container">
    <div class="subcontainer">
-   <h1>Login failed</h1>
+  
+   <h1>Incorrect Password Format</h1>
    <form action="index.jsp">
-   <input type="submit" value="go to home page">
+   <input type="submit" value="go to log in page">
    </form>
    </div>
-</div>
+   </div>
 </body>
 </html>

@@ -27,7 +27,14 @@
                 <input type="text" placeholder="Name" required name="name">
                 <input type="email" placeholder="Email" required name="email">
                 <input type="number" placeholder="Number" required name="mobile">
-                <input type="password" placeholder="Password" required name="password">
+             	<div class="passwordBox">
+             		<input type="password" id="password" placeholder="Password" required name="password">
+                	<i class="fa-regular fa-eye f-center" id="eye"></i>
+                	
+              </div>
+            
+              
+               
                 <input type="submit" value="Sign Up">
             </form>
         </div>

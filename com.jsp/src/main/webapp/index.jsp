@@ -543,7 +543,7 @@
 				<a href="#">Services</a>
 				<a href="#">Courses</a>
 				<a href="#">Categories</a>
-				<a href="#">Testimonials</a>
+				
 			</div>
 		</div>
 
@@ -576,7 +576,6 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 

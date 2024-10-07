@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.RequestDispatcher;
@@ -28,11 +30,26 @@ public class NewUserRegisterServlet extends GenericServlet {
 		System.out.println(name+" "+email+" "+mobile+" "+password);
 		System.out.println("before try block");
 		boolean b=checkAvailability(email, mobile);
+		if(!valiadtePassword(password))
+		{
+			System.out.println("invalid password format");
+			RequestDispatcher rd=req.getRequestDispatcher("/failedPassword.jsp");
+			rd.forward(req, res);
+		}
+		if(!validatePhoneNumber(mobile))
+		{
+			System.out.println("invalid phone number format");
+			RequestDispatcher rd=req.getRequestDispatcher("/invalidmobilenumbermsg.jsp");
+			rd.forward(req, res);
+		}
 		if(b)
 		{
 			RequestDispatcher rd=req.getRequestDispatcher("/alreadypresent.jsp");
 			rd.forward(req, res);
 		}
+		
+		
+			
 		
 			try {
 				System.out.println("try block");
@@ -69,6 +86,23 @@ public class NewUserRegisterServlet extends GenericServlet {
 
 return false;
 		}
+	}
+	
+	
+	private boolean valiadtePassword(String password)
+	{
+		String expression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{6}$";
+		Pattern p=Pattern.compile(expression);
+		Matcher m=p.matcher(password);
+		return m.matches();
+	}
+	
+	private boolean validatePhoneNumber(String mobile)
+	{
+		String expression="[6789][0-9]{9}";
+		Pattern p=Pattern.compile(expression);
+		Matcher m=p.matcher(mobile);
+		return m.matches();
 	}
 	
 

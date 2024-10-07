@@ -10,7 +10,8 @@
 <body>
 <div class="container">
    <div class="subcontainer">
-   <h1"C:/Users/madhu/OneDrive/Desktop/java.png">Failed enroll</h1>
+   <!-- <h1"C:/Users/madhu/OneDrive/Desktop/java.png">Failed enroll</h1> -->
+   <h1>Enroll Failed</h1>
    <form action="index.jsp">
    <input type="submit" value="go to log in page">
    </form>

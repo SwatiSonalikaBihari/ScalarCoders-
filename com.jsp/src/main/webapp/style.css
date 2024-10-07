@@ -102,7 +102,7 @@ section.home{
 	margin: 0px auto;
 
 	box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
-	animation: showMenu 0.6s ease-in;
+	/* animation: showMenu 0.6s ease-in; */
 }
 @keyframes showMenu{
 	from{
@@ -363,13 +363,12 @@ section.home{
 	height: auto;
 	opacity: 0.4;
 }
-/*   === Home Section Styling Ends ===   */
 
-/*   === Partners Section Styling Starts ===   */
-section.partners{
+
+/* section.partners{
 	width: 100%;
 	padding: 30px 8%;
-	/* background-color: var(--primary-medium-clr); */
+	background-color: var(--primary-medium-clr);
 	background-color: rgb(233, 230, 230);
 }
 .partners h3{
@@ -419,8 +418,8 @@ section.partners{
 }
 .owl-carousel .owl-dots .owl-dot.active span{
 	background-color: var(--primary-clr) !important;
-}
-/*   === Partners Section Styling Ends ===   */
+} */
+
 
 /*   === Services Section Styling Starts ===   */
 section.services{
@@ -491,7 +490,7 @@ section.services{
 .service-box:nth-child(3) .service-icon i{
 	color: #5a49f3;
 }
-/*   === Services Section Styling Ends ===   */
+
 
 /*   === Courses Section Styling Starts ===   */
 section.courses{
@@ -674,7 +673,7 @@ section.instructor{
 }
 /*   === Teacher Section Styling Ends ===   */
 
-/*   === Testimonials Section Styling Starts ===   */
+/* /*   === Testimonials Section Styling Starts ===   */
 section.testimonials{
 	width: 100%;
 	padding: 100px 8%;
@@ -740,14 +739,14 @@ section.testimonials{
 	font-size: 17px;
 	color: gold;
 	cursor: pointer;
-}
+} */
 /*   === Testimonials Section Styling Ends ===   */
 
 /*   === Footer Section Styling Starts ===   */
 section.footer{
 	width: 100%;
 	padding: 70px 8% 30px;
-	background-color: var(--primary-clr);
+	background-color:var(--primary-clr);
 }
 .footer .footer-contents{
 	width: 100%;
@@ -949,26 +948,26 @@ section.footer{
 		font-size: 42px;
 	}
 	/* Testimonials Section */
-	.testimonials .section-header{
+	/* .testimonials .section-header{
 		width: 100%;
 		margin-bottom: 70px;
-	}
+	} */
 }
 
-@media(max-width: 668px){
-	/* Partners Section */
+/* @media(max-width: 668px){
+	Partners Section
 	.partners h3{
 		margin-right: 150px;
 	}
-	/* Services Section */
+	Services Section
 	.services-contents .service-box{
 		flex-basis: 100%;
 	}
-	/* Courses Section */
+	Courses Section
 	.courses .course-contents .course-card{
 		flex-basis: 100%;
 	}
-}
+} */
 
 @media(max-width: 568px){
 	/* Courses Categories Section */
